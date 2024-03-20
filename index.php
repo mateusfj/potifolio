@@ -15,44 +15,53 @@
 </head>
 
 <body>
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="index.html"><i class="bi bi-code-slash"></i> Mateus</a>
+
+    <div class="inicio">
+        <header>
+            <div class="interface">
+                <div class="logo">
+                    <a href="index.html"><i class="bi bi-code-slash"></i> Mateus</a>
+                </div>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                    </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="#"><button>CONTATO</button></a>
+                </div>
             </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato">
-                <a href="#"><button>CONTATO</button></a>
-            </div>
-        </div>
-    </header>
-    <main>
+        </header>
+
+
         <section class="topo-site">
-            <div class="txt-topo-site">
-                <p>Olá, o meu nome é </p>
-                <h1>MATEUS SOUSA</h1>
-                <div class="maquina-escrever">
-                    <h2>Desenvolvedor Front-end</h2>
+            <div class="interface">
+                <div class="txt-topo-site">
+                    <p>Olá, o meu nome é </p>
+                    <h1>MATEUS SOUSA</h1>
+                    <div class="maquina-escrever">
+                        <h2>Desenvolvedor Front-end</h2>
+                    </div>
+                    <a href="#"><button>PROJETOS <i class="bi bi-arrow-right"></i></button></a>
+                    <div class="icons-button">
+                        <a href="#"><button><img src="assets/github.png" alt=""></button></a>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><button><img src="assets/linkedin.png" alt=""></button></a>
+                        <a href="#"><button><img src="assets/instagram.png" alt=""></button></a>
+                    </div>
                 </div>
-                <a href="#"><button>PROJETOS <i class="bi bi-arrow-right"></i></button></a>
-                <div class="icons-button">
-                    <a href="#"><button><img src="assets/github.png" alt=""></button></a>
-                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><button><img src="assets/linkedin.png" alt=""></button></a>
-                    <a href="#"><button><img src="assets/instagram.png" alt=""></button></a>
+                <div class="img-topo-site">
+                    <img src="assets/img-topo-site.png" alt="">
                 </div>
-            </div>
-            <div class="img-topo-site">
-                <img src="assets/img-topo-site.png" alt="">
             </div>
         </section>
-        <section class="sobre">
+    </div>
+
+
+    <section class="sobre">
+        <div class="interface">
             <h1>Sobre mim</h1>
             <div class="especialidades">
                 <div class="img-especialidade">
@@ -66,8 +75,9 @@
                     <p>Disponível para freelance e busco oportunidade para trabalhar na área.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
     <script src="assets/script.js?<?= rand() ?>"></script>
 </body>
 

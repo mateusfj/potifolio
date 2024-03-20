@@ -1,10 +1,22 @@
-*{margin: 0;box-sizing: border-box;padding: 0;font-family: "Roboto", sans-serif;}
+*{margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    --cor-fundo: #E5E5E5;
+    --cor-font: #445964;
+    background-color: var(--cor-fundo);
+}
 
+
+body{height: 100vh;}
+.flex{display: flex;}
 
 /* HEADER */
-body{height: 100vh;}
+.inicio{height: 100vh; width: 100%;}
+
 header{padding: 40px 4%;}
-.interface{max-width: 1280px;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
+.interface{max-width: 1280px;margin: 0 auto;}
+header > .interface{display: flex;justify-content: space-between;align-items: center;}
 .interface .logo{}
 .interface .logo a{text-decoration: none;font-size: 36px;color: black;}
 .interface .menu-desktop{}
@@ -21,28 +33,41 @@ header{padding: 40px 4%;}
 
 
 /*TOPO SITE*/
-main {}
-main .topo-site{display: flex;max-width: 1390px;padding: 40px 4%;justify-content: space-between;margin: 0 auto;}
-main .topo-site .txt-topo-site{}
-main .topo-site .txt-topo-site > p{font-size: 24px;}
-main .topo-site .txt-topo-site .maquina-escrever h2{font-family: monospace;border-right: 4px solid;overflow: hidden;width: 23ch;white-space: nowrap;animation: typing 3s steps(23), bliking 0.9s infinite alternate;font-size: 31px;}
-main .topo-site .txt-topo-site h1{font-size: 3.3rem;}
-main .topo-site .txt-topo-site a{}
-main .topo-site .txt-topo-site a button{
-    font-size: 14px;
-}
-main .topo-site .txt-topo-site .icons-button{margin-top: 146px;display: flex;}
-main .topo-site .txt-topo-site .icons-button a{}
-main .topo-site .txt-topo-site .icons-button a button{border: none;background-color: white;cursor: pointer;}
-main .topo-site .txt-topo-site .icons-button a:hover{}
-main .topo-site .txt-topo-site .icons-button img{width: 30px; height: 30px; margin:0 5px;}
-main .topo-site .txt-topo-site > a button{height: 45px;border:none;width: 200px;background-color: black;color: white;border-radius: 0px;margin-top: 75px;cursor: pointer;transition: .2s;}
-main .topo-site .txt-topo-site > a button:hover{border: 1px solid black;color: black;background-color: white;   }
-main .topo-site .img-topo-site{}
-main .topo-site .img-topo-site img{height: 480px;}
-
-
+.topo-site{padding: 40px 4%;}
+.topo-site > .interface{display: flex;justify-content: space-between;align-items: center;}
+.topo-site .txt-topo-site{width: 50%;}
+.topo-site .txt-topo-site > p{font-size: 24px;}
+.topo-site .txt-topo-site .maquina-escrever h2{font-family: monospace;border-right: 4px solid;overflow: hidden;width: 23ch;white-space: nowrap;animation: typing 3s steps(23), bliking 0.9s infinite alternate;font-size: 31px;}
+.topo-site .txt-topo-site h1{font-size: 3.3rem;}
+.topo-site .txt-topo-site a{}
+.topo-site .txt-topo-site a button{
+font-size: 14px;}
+.topo-site .txt-topo-site .icons-button{margin-top: 146px;display: flex;}
+.topo-site .txt-topo-site .icons-button a{}
+.topo-site .txt-topo-site .icons-button a button{border: none;background-color: transparent;cursor: pointer;}
+.topo-site .txt-topo-site .icons-button a:hover{}
+.topo-site .txt-topo-site .icons-button img{width: 30px; height: 30px; margin:0 5px;}
+.topo-site .txt-topo-site > a button{height: 45px;border:none;width: 200px;background-color: black;color: white;border-radius: 0px;margin-top: 75px;cursor: pointer;transition: .2s;}
+.topo-site .txt-topo-site > a button:hover{border: 1px solid black;color: black;background-color: white;   }
+.topo-site .img-topo-site{width: 50%;text-align: center;}
+.topo-site .img-topo-site img{height: 480px;}
 /*FIM TOPO SITE*/
+
+
+/*SOBRE*/
+.sobre{padding: 40px 4%;margin-top: 100px; height: 100vh;}
+.sobre > h1{text-align: center;}
+.sobre .especialidades{display: flex;margin: 40px 0;align-items: center;width: 100%;}
+.sobre .especialidades .img-especialidade{width: 50%;display: flex;justify-content: end;padding-right: 80px;}
+.sobre .especialidades .img-especialidade img{width: 256px;height: 256px;}
+.sobre .especialidades .txt-especialidades{width: 50%;}
+.sobre .especialidades .txt-especialidades h1{}
+.sobre .especialidades .txt-especialidades p{}
+/*FIM SOBRE*/
+
+
+
+
 
 
 /*keyframes*/
@@ -58,23 +83,3 @@ main .topo-site .img-topo-site img{height: 480px;}
 }
 
 /*fim keyframes*
-
-/* Header */
-
-/*SOBRE*/
-.sobre{max-width: 1390px;margin: 0 auto;padding: 40px 4%;margin-top: 100px;}
-.sobre > h1{text-align: center;}
-.sobre .especialidades{display: flex;margin: 40px 0;align-items: center;width: 100%;}
-.sobre .especialidades .img-especialidade{
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    padding-right: 80px;
-}
-.sobre .especialidades .img-especialidade img{width: 256px;/* width: 50%; */height: 256px;}
-.sobre .especialidades .txt-especialidades{
-    width: 50%;
-}
-.sobre .especialidades .txt-especialidades h1{}
-.sobre .especialidades .txt-especialidades p{}
-/*FIM SOBRE*/
