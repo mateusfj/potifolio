@@ -16,9 +16,12 @@
 
 <body>
 
-    <div class="inicio">
-        <header>
-            <div class="interface">
+    <section class="home">
+        <!--<div class="banner">
+                <img class="banner-img" src="" alt="">
+            </div>-->
+        <div class="interface">
+            <header class="cabecalho flex">
                 <div class="logo">
                     <a href="index.html"><i class="bi bi-code-slash"></i> Mateus</a>
                 </div>
@@ -33,50 +36,11 @@
                 <div class="btn-contato">
                     <a href="#"><button>CONTATO</button></a>
                 </div>
-            </div>
-        </header>
-
-
-        <section class="topo-site">
-            <div class="interface">
-                <div class="txt-topo-site">
-                    <p>Olá, o meu nome é </p>
-                    <h1>MATEUS SOUSA</h1>
-                    <div class="maquina-escrever">
-                        <h2>Desenvolvedor Front-end</h2>
-                    </div>
-                    <a href="#"><button>PROJETOS <i class="bi bi-arrow-right"></i></button></a>
-                    <div class="icons-button">
-                        <a href="#"><button><img src="assets/github.png" alt=""></button></a>
-                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><button><img src="assets/linkedin.png" alt=""></button></a>
-                        <a href="#"><button><img src="assets/instagram.png" alt=""></button></a>
-                    </div>
-                </div>
-                <div class="img-topo-site">
-                    <img src="assets/img-topo-site.png" alt="">
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <section class="sobre">
-        <div class="interface">
-            <h1>Sobre mim</h1>
-            <div class="especialidades">
-                <div class="img-especialidade">
-                    <img src="assets/img-sobre.png" alt="">
-                </div>
-                <div class="txt-especialidades">
-                    <h1>Mateus Sousa</h1>
-                    <p>Me chamo Vitor Markis e eu amo tecnologia e programação. Quando era mais jovem, programei em Java, C# e Visual Basic, criando jogos e programas.</p>
-                    <p>Em 2022, decidi retomar meus estudos em programação, dessa vez focando em Javascript para a área de Web.</p>
-                    <p>Escolhi Javascript devido à sua grande comunidade, grande potencial de crescimento e possibilidade de reutilização de conhecimentos na web, mobile e backend, através de React e Node.</p>
-                    <p>Disponível para freelance e busco oportunidade para trabalhar na área.</p>
-                </div>
-            </div>
+            </header>
         </div>
     </section>
+
+
 
     <script src="assets/script.js?<?= rand() ?>"></script>
 </body>
