@@ -8,7 +8,7 @@ a{text-decoration: none;}
 section{width: 100%;}
 .title{font-size: 3rem; text-align: center;}
 .txt_p{text-align: center; color: rgb(85, 85, 85);}
-
+.size{height: 100vh;}
 
 /*BANNER*/
 
@@ -20,16 +20,19 @@ section{width: 100%;}
 
 /* HOME PAGE */
 /*HEADER*/
-.home{background-image: url(banner2.png);background-size: cover;}
-.cabecalho{padding: 40px 4%;display: flex;justify-content: space-between;align-items: center;}
+.home{background-image: url(../banner2.png);background-size: cover;}
+.cabecalho{padding: 40px 0;display: flex;justify-content: space-between;align-items: center;}
 .logo{}
 .logo a{}
 .logo a img{height: 90px;}
 .menu-desktop{}
 .menu-desktop ul{}
 .menu-desktop ul li{list-style: none;display: inline-block;}
-.menu-desktop ul li a{text-decoration: none;margin: 24px;display: inline-block;color: rgb(85, 85, 85);}
+.menu-desktop ul li a{text-decoration: none;margin: 24px;display: inline-block;color: rgb(85, 85, 85); position: relative;}
+.menu-desktop ul li a::after{content: "";
+width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; left: 0; transition: 0.5s ease-in-out;}
 .menu-desktop ul li a:hover{color: black;transform: scale(1.1);transition: .2s;}
+.menu-desktop ul li a:hover::after{width: 100%;}
 .btn-contato{}
 .btn-contato a{}
 .btn-contato a button{padding: 10px 38px;border: none;color: white;background-color: black;cursor: pointer;font-size: 12px;transition: 0.2s;border-radius: 10px;}
@@ -38,7 +41,7 @@ section{width: 100%;}
 
 /*CONTENTE-IMT-TXT*/
 
-.txt-img{width: 100%;height: 80vh;display: flex;padding: 40px 4%;justify-content: center;align-items: center;color: black;}
+.txt-img{width: 100%;height: 80vh;display: flex;justify-content: center;align-items: center;color: black;}
 .txt-img .img-topo{margin-right: 20px;}
 .txt-img .img-topo img{height: 400px;}
 .txt-img .txt-topo{text-align: center;margin-left: 20px;height: auto;}
@@ -50,7 +53,7 @@ section{width: 100%;}
 .buttons{display: flex;justify-content: space-evenly;margin: 2rem 0;}
 .buttons .btn{}
 .buttons .btn-git {}
-.buttons .btn-git a{padding: 1rem 3rem;border: 1px solid black;border-radius: 2rem;background-color: white;color: black;transition: 0.3s;}
+.buttons .btn-git a{padding: 1rem 3rem;border: 1px solid black;border-radius: 2rem;background-color: transparent;color: black;transition: 0.3s;}
 .buttons .btn-git a:hover{color: white;background: black;}
 .buttons .btn-li{}
 .buttons .btn-li a{padding: 1rem 3rem;border-radius: 2rem;background: black;color: white;transition: 0.3s;}
@@ -73,7 +76,7 @@ background: rgb(85, 85, 85);}
 .sobre-content .txt-sobre h1{}
 .sobre-content .txt-sobre p{}
 .btn-cv{}
-.btn-cv button{background: black;border: none;color: white;padding: 1rem 2rem;border-radius: 2rem;cursor: pointer;border: 1px solid black;margin: 40px 0 0 0;}
+.btn-cv button{background: black;border: none;color: white;padding: 1rem 2rem;border-radius: 2rem;cursor: pointer;border: 1px solid black;margin: 40px 0 0 0; transition: 0.5s;}
 .btn-cv button:hover{color:black; background-color: white;}
 
 
@@ -95,13 +98,57 @@ ul.timeline li {text-align:center;width: 34%;}
 
 /*PROJETOS MIM*/
 
-.projetos{display: flex;justify-content: space-evenly;}
-.projetos .conteiner{border-radius: 2rem; border: 0.1rem solid rgb(163, 163, 163);margin: 0 30px;padding: 1.5rem;}
+.projetos{display: flex;justify-content: space-evenly;flex-wrap: wrap;margin-bottom: 100px;}
+.projetos .conteiner{border-radius: 1rem;border: 0.1rem solid rgb(163, 163, 163);margin: 10px;padding: 1.5rem;}
+.projetos .conteiner p{width: 290px;margin: 20px 0;}
+.projetos .conteiner h3{}
 .contente-project{}
-.contente-project img{width: 18rem;height: 18rem;object-fit: cover;border-radius: 2rem;}
+.contente-project img{width: 18rem;height: 18rem;object-fit: cover;border-radius: 1rem;}
 .contente-project h2{text-align: center;}
-.btn-project{display: flex;justify-content: space-around;margin: 18px 0;}
-.btn-project button{background: white;color: black;border: 0.1rem solid black;padding: 1rem;width: 8rem;border-radius: 2rem;cursor: pointer;}
+.btn-project{display: flex;justify-content: space-between;margin: 20px 0 0;}
+.btn-project button{background: white;color: black;border: 0.1rem solid black;padding: 1rem;width: 8rem;border-radius: 2rem;cursor: pointer; transition: 0.5s;}
+.btn-project button:hover{background-color: black;color: white;}
+.icons-tech{display: flex;}
 
+
+.icons-tech .icon{margin: 5px 5px 5px 0;cursor: pointer;}
+.icons-tech .icon img{width: 30px;}
 /*FIM PROJETOS MIM*/
+
+
+/*CONTATO MIM*/
+.links{margin-bottom: 120px;}
+.links-ctt{margin: 0 auto;max-width: 28rem;width: 100%;}
+.links-ctt .contato{display: flex;border: 1px solid;border-radius: 0.5rem;padding: 0.5rem;margin: 8px 0;transition: 0.5s;cursor: pointer;}
+.links-ctt .whatsapp:hover{
+color: #22C55E;}
+.links-ctt .linkedin:hover{
+color: #3B82F6;}
+.links-ctt .email:hover{
+color: #EF4444;}
+.txt-contato{width: 100%;
+text-align: center;}
+.links-ctt .contato .txt-contato p{}
+
+
+/*FIM CONTATO MIM*/
+
+
+/*FIM CONTATO MIM*/
+
+.footer{display: flex;width: 100%;justify-content: space-around;background: black;color: white;padding: 3rem;}
+.footer h2{text-align: center;font-weight: 100;font-size: 1.3rem;}
+.footer ul{}
+.footer ul li{list-style: none;width: 100%;}
+.footer ul li a{display: block;color: white;font-size: 14px;width: 100%;padding: 0.5rem;border-radius: 0.5rem;}
+.footer ul li a:hover{background-color: #171717;}
+.footer a span{margin-left: 6px;}
+.footer .footer-nav{}
+.footer .footer-nav{width: 30%;}
+.footer-contato{}
+.footer-contato .ctt-footer{display: flex;width: 20rem;padding: 0.5rem;border: 1px solid;margin: 10px 0;border-radius: 0.5rem;cursor: pointer;}
+
+
+/*FIM CONTATO MIM*/
+
 
