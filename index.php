@@ -30,9 +30,8 @@
                         <img src="assets/logo3.png" alt="">
                     </a>
                 </div>
-
-                <div class="menu-mobile">
-
+                <div class="btn-menu">
+                    <span><i class="bi bi-list"></i></span>
                 </div>
                 <nav class="menu-desktop">
                     <ul>
@@ -74,7 +73,7 @@
         </div>
     </section>
 
-    <section class="interface size">
+    <section class="interface">
         <div class="header">
             <p class="txt_p">conheça mais</p>
             <h2 class="title">Sobre mim</h2>
@@ -341,10 +340,10 @@
                 <div class="footer-contato">
                     <h2>Contato</h2>
                     <div class="ctt-footer">
-                    <i class="bi bi-whatsapp"></i>
-                    <div class="txt-contato">
-                        <p>86-98144-2421</p>
-                    </div>
+                        <i class="bi bi-whatsapp"></i>
+                        <div class="txt-contato">
+                            <p>86-98144-2421</p>
+                        </div>
                     </div>
                     <div class="ctt-footer">
                         <i class="bi bi-linkedin"></i>

@@ -21,11 +21,12 @@ section{width: 100%;}
 /* HOME PAGE */
 /*HEADER*/
 .home{background-image: url(../banner2.png);background-size: cover;}
-.cabecalho{padding: 40px 0;display: flex;justify-content: space-between;align-items: center;}
+.cabecalho{padding: 40px 0;display: flex;align-items: center;justify-content: space-around;}
 .logo{}
 .logo a{}
 .logo a img{height: 90px;}
-.menu-desktop{}
+.btn-menu{display: none;}
+.menu-desktop{display: flex;}
 .menu-desktop ul{}
 .menu-desktop ul li{list-style: none;display: inline-block;}
 .menu-desktop ul li a{text-decoration: none;margin: 24px;display: inline-block;color: rgb(85, 85, 85); position: relative;}
@@ -69,7 +70,7 @@ background: rgb(85, 85, 85);}
 
 .header{padding: 20px 4%;}
 .sobre-content{}
-.txt-img-sobre{display: flex;align-items: center;margin-top: 30px;}
+.txt-img-sobre{display: flex;align-items: center;margin-top: 30px;padding: 0 4%;}
 .sobre-content .img-sobre{width: 50%;text-align: end;margin-right: 80px;}
 .sobre-content .img-sobre img{height: 300px;}
 .sobre-content .txt-sobre{width: 50%;display: flex;flex-direction: column;gap: 0.75rem;}
@@ -136,7 +137,7 @@ text-align: center;}
 
 /*FIM CONTATO MIM*/
 
-.footer{display: flex;width: 100%;justify-content: space-around;background: black;color: white;padding: 3rem;}
+.footer{display: flex;/* width: 100%; */justify-content: space-around;background: black;color: white;padding: 3rem;}
 .footer h2{text-align: center;font-weight: 100;font-size: 1.3rem;}
 .footer ul{}
 .footer ul li{list-style: none;width: 100%;}
@@ -144,11 +145,174 @@ text-align: center;}
 .footer ul li a:hover{background-color: #171717;}
 .footer a span{margin-left: 6px;}
 .footer .footer-nav{}
-.footer .footer-nav{width: 30%;}
+.footer .footer-nav{width: 20%;}
 .footer-contato{}
-.footer-contato .ctt-footer{display: flex;width: 20rem;padding: 0.5rem;border: 1px solid;margin: 10px 0;border-radius: 0.5rem;cursor: pointer;}
+.footer-contato .ctt-footer{display: flex;width: 20rem;padding: 0.5rem;border-radius: 0.5rem;cursor: pointer;}
+.footer-contato .ctt-footer > .txt-contato{margin-left: 8px;text-align: left;}
+
 
 
 /*FIM CONTATO MIM*/
 
 
+@media (max-width: 1024px) {
+*{margin: 0;box-sizing: border-box;padding: 0;font-family: "Poppins", sans-serif;}
+
+.flex{display: flex;}
+.interface{max-width: 1280px;margin: 0 auto;}
+a{text-decoration: none;}
+section{width: 100%;}
+.title{font-size: 3rem; text-align: center;}
+.txt_p{text-align: center; color: rgb(85, 85, 85);}
+.size{height: 100vh;}
+
+/*BANNER*/
+
+.banner{}
+.banner .banner-img{}
+
+/*FIM HOME PAGE */
+
+
+/* HOME PAGE */
+/*HEADER*/
+.home{background-image: url(../banner2.png);background-size: cover;padding: 0 4%;}
+.cabecalho{padding: 40px 0;display: flex;align-items: center;justify-content: space-between;}
+.logo{}
+.logo a{}
+.logo a img{height: 55px;}
+.btn-menu{display: block;}
+.btn-menu i{font-size: 40px;}
+.menu-desktop{display: none;}
+.menu-desktop ul{display: block;}
+.menu-desktop ul li{list-style: none;display: inline-block;}
+.menu-desktop ul li a{text-decoration: none;margin: 24px;display: inline-block;color: rgb(85, 85, 85); position: relative;}
+.menu-desktop ul li a::after{content: "";
+width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; left: 0; transition: 0.5s ease-in-out;}
+.menu-desktop ul li a:hover{color: black;transform: scale(1.1);transition: .2s;}
+.menu-desktop ul li a:hover::after{width: 100%;}
+.btn-contato{display: none;
+}
+.btn-contato a{}
+.btn-contato a button{padding: 10px 38px;border: none;color: white;background-color: black;cursor: pointer;font-size: 12px;transition: 0.2s;border-radius: 10px;}
+.btn-contato a button:hover{background-color: white;color:black;}
+/*FIM HEADER*/
+
+/*CONTENTE-IMT-TXT*/
+
+.txt-img{width: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;color: black;}
+.txt-img .img-topo{margin: 0;}
+.txt-img .img-topo img{height: 260px;margin-bottom: 30px;}
+.txt-img .txt-topo{text-align: center;margin-left: 0;height: auto;}
+.txt-img .txt-topo p{font-weight: 600;color: rgb(85, 85, 85);}
+.txt-img .txt-topo h1{font-size: 2rem;}
+.txt-img .txt-topo h2{color: rgb(85, 85, 85);font-size: 1.5rem;}
+
+
+.buttons{display: flex;justify-content: space-evenly;margin: 2rem 0;width: 100%;}
+.buttons .btn{}
+.buttons .btn-git {}
+.buttons .btn-git a{padding: 0.5rem 2rem;border: 1px solid black;border-radius: 2rem;background-color: transparent;color: black;transition: 0.3s;}
+.buttons .btn-git a:hover{color: white;background: black;}
+.buttons .btn-li{}
+.buttons .btn-li a{padding: 0.5rem 2rem;border-radius: 2rem;background: black;color: white;transition: 0.3s;}
+.buttons .btn-li a:hover{
+background: rgb(85, 85, 85);}
+/*FIM CONTENTE-IMT-TXT*/
+
+/*FIM HOME PAGE */
+
+
+
+/*SOBRE MIM*/
+
+.header{padding: 20px 4%;}
+.sobre-content{padding: 0 4%;
+}
+.txt-img-sobre{display: flex;align-items: center;flex-direction: column;margin-top: 30px;}
+.sobre-content .img-sobre{width: 100%;text-align: center;margin: 0 0 36px;}
+.sobre-content .img-sobre img{height: 300px;}
+.sobre-content .txt-sobre{width: 100%;display: flex;flex-direction: column;gap: 0.75rem;}
+.sobre-content .txt-sobre h1{text-align: center;
+}
+.sobre-content .txt-sobre p{width: 100%;}
+.btn-cv{text-align: center;
+}
+.btn-cv button{background: black;border: none;color: white;padding: 1rem 2rem;border-radius: 2rem;cursor: pointer;border: 1px solid black;margin: 25px 0 0 0;transition: 0.5s;}
+.btn-cv button:hover{color:black; background-color: white;}
+
+
+/*TIMELINE*/
+
+ul.timeline {list-style-type: none;display: flex;width:100%;padding: 51px 4%;}
+ul.timeline li {text-align:center;width: 34%;}
+.timeline-border {border: 1px solid black;width: 100%;position:relative;display: block;}
+.timeline-border:after {content: '';position: absolute;height: 30px;width: 30px;border-radius: 50%;background: black;left: 13px;top: 50%;transform: translate(-50%, -50%);}
+.timeline-text {width: 80%;display: block;text-align: left;margin: 30px 0;}
+.timeline-box {padding-bottom: 30px;display: block;text-align: justify;}
+
+@media only screen and (max-width: 991px) {ul.timeline {list-style-type: none;display: block;width:100%;}ul.timeline li {border-left: 2px solid black;padding: 1px 0;width: 100%;text-align: left;}.timeline-border {border: 0px none;}.timeline-border:after {left: 0;top: -13px;}.timeline-text {padding-top: 0;padding-bottom:15px;margin-left: 25px;}.timeline-box {margin-left: 25px;padding: 0;}
+}
+
+/*FIM TIMELINE*/
+/*FIM SOBRE MIM*/
+
+
+/*PROJETOS MIM*/
+
+.projetos{display: flex;justify-content: space-evenly;flex-wrap: wrap;margin-bottom: 40px;}
+.projetos .conteiner{border-radius: 1rem;border: 0.1rem solid rgb(163, 163, 163);margin: 10px;padding: 1.5rem;}
+.projetos .conteiner p{width: 290px;margin: 20px 0;}
+.projetos .conteiner h3{}
+.contente-project{}
+.contente-project img{width: 18rem;height: 18rem;object-fit: cover;border-radius: 1rem;}
+.contente-project h2{text-align: center;}
+.btn-project{display: flex;justify-content: space-between;margin: 20px 0 0;}
+.btn-project button{background: white;color: black;border: 0.1rem solid black;padding: 1rem;width: 8rem;border-radius: 2rem;cursor: pointer; transition: 0.5s;}
+.btn-project button:hover{background-color: black;color: white;}
+.icons-tech{display: flex;}
+
+
+.icons-tech .icon{margin: 5px 5px 5px 0;cursor: pointer;}
+.icons-tech .icon img{width: 30px;}
+/*FIM PROJETOS MIM*/
+
+
+/*CONTATO MIM*/
+.links{margin-bottom: 120px;margin: 0 4% 70px;}
+.links-ctt{margin: 0 auto;max-width: 28rem;width: 100%;}
+.links-ctt .contato{display: flex;border: 1px solid;border-radius: 0.5rem;padding: 0.5rem;margin: 8px 0;transition: 0.5s;cursor: pointer;}
+.links-ctt .whatsapp:hover{
+color: #22C55E;}
+.links-ctt .linkedin:hover{
+color: #3B82F6;}
+.links-ctt .email:hover{
+color: #EF4444;}
+.txt-contato{width: 100%;
+text-align: center;}
+.links-ctt .contato .txt-contato p{}
+
+
+/*FIM CONTATO MIM*/
+
+
+/*FIM CONTATO MIM*/
+
+.footer{display: flex;width: 100%;flex-direction: column;justify-content: space-around;background: black;color: white;padding: 3rem;}
+.footer h2{text-align: center;font-weight: 100;font-size: 1.3rem;}
+.footer ul{}
+.footer ul li{list-style: none;width: 100%;}
+.footer ul li a{display: block;color: white;font-size: 14px;width: 100%;padding: 0.5rem;border-radius: 0.5rem;}
+.footer ul li a:hover{background-color: #171717;}
+.footer a span{margin-left: 6px;}
+.footer .footer-nav{}
+.footer .footer-nav{width: 100%;margin-bottom: 25px;}
+.footer-contato{}
+.footer-contato .ctt-footer{display: flex;width: 100%;padding: 0.5rem;border-radius: 0.5rem;cursor: pointer;}
+.footer-contato .ctt-footer > .txt-contato{margin-left: 8px;text-align: left;}
+
+
+
+/*FIM CONTATO MIM*/
+
+}   
