@@ -4,16 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Obtém o botão de cadastro e a lista de cadastros pelo ID
     var btnMenu = document.querySelector(".btn-menu");
-    var menuDesktop = document.querySelector(".menu-desktop");
+    var menuMobile = document.querySelector(".menu-mobile");
 
     // Adiciona um ouvinte de eventos para o clique do botão de cadastro
     
     btnMenu.addEventListener("click", function () {
 
-        if (menuDesktop.style.display == 'none'|| menuDesktop.style.display === '') {
-            menuDesktop.style.display = 'block';
+        if (menuMobile.style.display == 'none'|| menuMobile.style.display === '') {
+            menuMobile.style.display = 'flex';
         } else {
-            menuDesktop.style.display = 'none';
+            menuMobile.style.display = 'none';
         }
     });
 });

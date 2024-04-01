@@ -28,6 +28,9 @@ section{width: 100%;}
 .btn-menu{display: none;}
 .menu-desktop{display: flex;}
 .menu-desktop ul{}
+
+.menu-mobile {display: none;}
+
 .menu-desktop ul li{list-style: none;display: inline-block;}
 .menu-desktop ul li a{text-decoration: none;margin: 24px;display: inline-block;color: rgb(85, 85, 85); position: relative;}
 .menu-desktop ul li a::after{content: "";
@@ -176,23 +179,34 @@ section{width: 100%;}
 
 /* HOME PAGE */
 /*HEADER*/
-.home{background-image: url(../banner2.png);background-size: cover;padding: 0 4%;}
-.cabecalho{padding: 40px 0;display: flex;align-items: center;justify-content: space-between;}
+.home{background-image: url(../banner2.png);background-size: cover;}
+.cabecalho{padding: 40px 4%;display: flex;align-items: center;justify-content: space-between;}
 .logo{}
 .logo a{}
 .logo a img{height: 55px;}
 .btn-menu{display: block;}
 .btn-menu i{font-size: 40px;}
 .menu-desktop{display: none;}
-.menu-desktop ul{display: block;}
+.menu-desktop ul{}
 .menu-desktop ul li{list-style: none;display: inline-block;}
 .menu-desktop ul li a{text-decoration: none;margin: 24px;display: inline-block;color: rgb(85, 85, 85); position: relative;}
 .menu-desktop ul li a::after{content: "";
 width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; left: 0; transition: 0.5s ease-in-out;}
 .menu-desktop ul li a:hover{color: black;transform: scale(1.1);transition: .2s;}
 .menu-desktop ul li a:hover::after{width: 100%;}
-.btn-contato{display: none;
-}
+
+.menu-mobile {position: fixed;max-width: 80vw;width: 100%;height: 100vh;display: none;flex-direction: column;padding: 4%;background: #000000c7;JUSTIFY-CONTENT: center;z-index: 1;}
+.menu-mobile .logo-mobile{text-align: center;}
+.menu-mobile .logo-mobile a{}
+.menu-mobile .logo-mobile a img{height: 80px;}
+.menu-mobile ul{margin: 50px 0;}
+.menu-mobile ul li{list-style: none;margin: 20px 0;text-transform: uppercase;font-size: 25px;text-align: center;}
+.menu-mobile ul li a{color: white;}
+.menu-mobile .icons-menu-mobile{font-size: 30px;display: flex;justify-content: space-evenly;color: white;}
+
+
+
+.btn-contato{display: none;}
 .btn-contato a{}
 .btn-contato a button{padding: 10px 38px;border: none;color: white;background-color: black;cursor: pointer;font-size: 12px;transition: 0.2s;border-radius: 10px;}
 .btn-contato a button:hover{background-color: white;color:black;}
