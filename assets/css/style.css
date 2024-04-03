@@ -214,7 +214,7 @@ width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; l
 
 /*CONTENTE-IMT-TXT*/
 
-.txt-img{width: 100%;display: flex;position: absolute;flex-direction: column;justify-content: center;align-items: center;margin-top: 90px;color: black;height: 100vh;}
+.txt-img{width: 100%;display: flex;position: absolute;flex-direction: column;justify-content: center;align-items: center;margin-top: 70px;color: black;height: 100vh;}
 .txt-img .img-topo{margin: 0;}
 .txt-img .img-topo img{height: 260px;margin-bottom: 30px;}
 .txt-img .txt-topo{text-align: center;margin-left: 0;height: auto;}
