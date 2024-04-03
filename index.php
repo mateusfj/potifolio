@@ -23,13 +23,8 @@
         <!--<div class="banner">
                 <img class="banner-img" src="" alt="">
             </div>-->
-
         <nav class="menu-mobile">
-            <div class="logo-mobile">
-                <a href="index.html">
-                    <img src="assets/logo4.png" alt="">
-                </a>
-            </div>
+
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -42,6 +37,7 @@
                 <i class="bi bi-whatsapp"></i>
             </div>
         </nav>
+
         <div class="interface">
             <header class="cabecalho flex">
                 <div class="logo">
