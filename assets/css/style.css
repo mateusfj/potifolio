@@ -214,7 +214,7 @@ width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; l
 
 /*CONTENTE-IMT-TXT*/
 
-.txt-img{position: absolute;width: 100%;display: flex;flex-direction: column;align-items: center;color: black;margin-top: 80px;}
+.txt-img{width: 100%;display: flex;flex-direction: column;align-items: center;color: black;height: auto;position: absolute;margin-top: 110px;}
 .txt-img .img-topo{margin: 0;}
 .txt-img .img-topo img{height: 260px;margin-bottom: 30px;}
 .txt-img .txt-topo{text-align: center;margin-left: 0;height: auto;}
