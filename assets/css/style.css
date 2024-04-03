@@ -179,7 +179,7 @@ section{width: 100%;}
 
 /* HOME PAGE */
 /*HEADER*/
-.home{background-image: url(../banner2.png);background-size: cover;}
+.home{background-image: url(../banner2.png);background-size: cover;position: relative;}
 .cabecalho{padding: 10px 4%;display: flex;align-items: center;justify-content: space-between;position: fixed;background: white;width: 100%;border-bottom: 2px solid rgb(85, 85, 85);z-index: 2;}
 .logo{}
 .logo a{}
@@ -214,7 +214,7 @@ width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; l
 
 /*CONTENTE-IMT-TXT*/
 
-.txt-img{width: 100%;display: flex;flex-direction: column;justify-content: flex-end;align-items: center;color: black;height: 100vh;}
+.txt-img{position: absolute;width: 100%;display: flex;flex-direction: column;align-items: center;color: black;margin-top: 80px;}
 .txt-img .img-topo{margin: 0;}
 .txt-img .img-topo img{height: 260px;margin-bottom: 30px;}
 .txt-img .txt-topo{text-align: center;margin-left: 0;height: auto;}
