@@ -1,4 +1,4 @@
-*{margin: 0;box-sizing: border-box;padding: 0;font-family: "Poppins", sans-serif;}
+*{margin: 0;box-sizing: border-box;padding: 0;font-family: "Poppins", sans-serif; scroll-behavior: smooth;}
 
 
 body{}
@@ -20,7 +20,7 @@ section{width: 100%;}
 
 /* HOME PAGE */
 /*HEADER*/
-.home{background-image: url(../banner2.png);background-size: cover;}
+#home{background-image: url(../banner2.png);background-size: cover;}
 .cabecalho{padding: 40px 0;display: flex;align-items: center;justify-content: space-around;}
 .logo{}
 .logo a{}
@@ -45,7 +45,7 @@ width: 0%; background-color: black; height: 2px; position:absolute; bottom: 0; l
 
 /*CONTENTE-IMT-TXT*/
 
-.txt-img{width: 100%;height: 80vh;display: flex;/* justify-content: center; */align-items: center;color: black;}
+.txt-img{width: 100%;height: 80vh;display: flex;justify-content: center;align-items: center;color: black;}
 .txt-img .img-topo{margin-right: 20px;}
 .txt-img .img-topo img{height: 400px;}
 .txt-img .txt-topo{text-align: center;margin-left: 20px;height: auto;}
@@ -179,7 +179,7 @@ section{width: 100%;}
 
 /* HOME PAGE */
 /*HEADER*/
-.home{background-image: url(../banner2.png);background-size: cover;position: relative;}
+#home{background-image: url(../banner2.png);background-size: cover;position: relative;}
 .cabecalho{padding: 10px 4%;display: flex;align-items: center;justify-content: space-between;position: fixed;background: white;width: 100%;border-bottom: 2px solid rgb(85, 85, 85);z-index: 2;}
 .logo{}
 .logo a{}
