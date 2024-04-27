@@ -4,7 +4,7 @@
 body{}
 .flex{display: flex;}
 .interface{max-width: 1280px;margin: 0 auto;}
-a{text-decoration: none;}
+a{text-decoration: none;color: black;}
 section{width: 100%;}
 .title{font-size: 3rem; text-align: center;}
 .txt_p{text-align: center; color: rgb(85, 85, 85);}
@@ -148,7 +148,6 @@ text-align: center;}
 .footer ul{}
 .footer ul li{list-style: none;width: 100%;}
 .footer ul li a{display: block;color: white;font-size: 14px;width: 100%;padding: 0.5rem;border-radius: 0.5rem;}
-.footer ul li a:hover{background-color: #171717;}
 .footer a span{margin-left: 6px;}
 .footer .footer-nav{}
 .footer .footer-nav{width: 20%;}
@@ -318,7 +317,6 @@ text-align: center;}
 .footer ul{}
 .footer ul li{list-style: none;width: 100%;}
 .footer ul li a{display: block;color: white;font-size: 14px;width: 100%;padding: 0.5rem;border-radius: 0.5rem;}
-.footer ul li a:hover{background-color: #171717;}
 .footer a span{margin-left: 6px;}
 .footer .footer-nav{}
 .footer .footer-nav{width: 100%;margin-bottom: 25px;}

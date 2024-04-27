@@ -4,8 +4,10 @@ var btnMenu = document.querySelector(".btn-menu");
 var menuMobile = document.querySelector(".menu-mobile");
 let cabecalho = document.querySelector(".cabecalho")
 let cabecalhoBorda = document.querySelector(".cabecalhoBorda")
+let linkMobile = document.querySelectorAll(".menu-mobile a")
 
-btnMenu.addEventListener("click", function () {
+
+btnMenu.addEventListener("click", () => {
 
     if (menuMobile.style.display == 'none' || menuMobile.style.display === '') {
         menuMobile.style.display = 'flex';
@@ -15,13 +17,16 @@ btnMenu.addEventListener("click", function () {
 });
 
 window.addEventListener('scroll', () => {
-    if(scrollY > 163){
+    if (scrollY > 163) {
         cabecalho.style.borderBottom = '1px solid black';
 
-    } else{
+    } else {
         cabecalho.style.borderBottom = 'none';
     }
 })
 
-
-console.log(scrollY)
+linkMobile.forEach( link => {
+    link.addEventListener("click", () => {
+        menuMobile.style.display = 'none';
+    })
+})
