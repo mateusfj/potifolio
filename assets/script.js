@@ -1,19 +1,27 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Aguarda até que o DOM esteja completamente carregado
 
-    // Obtém o botão de cadastro e a lista de cadastros pelo ID
-    var btnMenu = document.querySelector(".btn-menu");
-    var menuMobile = document.querySelector(".menu-mobile");
+var btnMenu = document.querySelector(".btn-menu");
+var menuMobile = document.querySelector(".menu-mobile");
+let cabecalho = document.querySelector(".cabecalho")
+let cabecalhoBorda = document.querySelector(".cabecalhoBorda")
 
-    // Adiciona um ouvinte de eventos para o clique do botão de cadastro
-    
-    btnMenu.addEventListener("click", function () {
+btnMenu.addEventListener("click", function () {
 
-        if (menuMobile.style.display == 'none'|| menuMobile.style.display === '') {
-            menuMobile.style.display = 'flex';
-        } else {
-            menuMobile.style.display = 'none';
-        }
-    });
+    if (menuMobile.style.display == 'none' || menuMobile.style.display === '') {
+        menuMobile.style.display = 'flex';
+    } else {
+        menuMobile.style.display = 'none';
+    }
 });
+
+window.addEventListener('scroll', () => {
+    if(scrollY > 163){
+        cabecalho.style.borderBottom = '1px solid black';
+
+    } else{
+        cabecalho.style.borderBottom = 'none';
+    }
+})
+
+
+console.log(scrollY)

@@ -37,11 +37,10 @@
             </div>
         </nav>
 
-
         <div class="interface">
             <header class="cabecalho flex">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="assets/logo3.png" alt="">
                     </a>
                 </div>
@@ -150,14 +149,14 @@
         </div>
         <div class="projetos interface">
             <div class="conteiner">
-                <h3>Tela de Login - ADTR</h3>
-                <p>Tela de login que cadastras usuario e toda a parte de autenticação.</p>
+                <h3>Netflix</h3>
+                <p>Site de streming</p>
                 <div class="icons-tech">
                     <div class="icon">
-                        <img title="PHP" src="assets/php.png" alt="icone php">
+                        <img title="React" src="assets/react.png" alt="icone react">
                     </div>
                     <div class="icon">
-                        <img title="MYSQL" src="assets/mysql.png" alt="icone mysql">
+                        <img title="JavaScript" src="assets/js.png" alt="icone javascript">
                     </div>
                     <div class="icon">
                         <img title="HTML" src="assets/html.png" alt="icone Html">
@@ -167,7 +166,7 @@
                     </div>
                 </div>
                 <div class="contente-project">
-                    <img src="assets/one-piece.jpeg" alt="">
+                    <img src="assets/projeto-netflix2.png" alt="">
                 </div>
                 <div class="btn-project">
                     <button>GitHub <i class="bi bi-github"></i></button>
