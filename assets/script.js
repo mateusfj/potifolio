@@ -25,6 +25,8 @@ window.addEventListener('scroll', () => {
     }
 })
 
+
+
 linkMobile.forEach( link => {
     link.addEventListener("click", () => {
         menuMobile.style.display = 'none';
